@@ -1,0 +1,8 @@
+D:\wp\kyrsa\bin\Debug\DESCBCProj.exe
+D:\wp\kyrsa\bin\Debug\DESCBCProj.pdb
+D:\wp\kyrsa\obj\x86\Debug\DESCBCProj.csprojResolveAssemblyReference.cache
+D:\wp\kyrsa\obj\x86\Debug\CBCDES.Form1.resources
+D:\wp\kyrsa\obj\x86\Debug\DESCBC.Properties.Resources.resources
+D:\wp\kyrsa\obj\x86\Debug\DESCBCProj.csproj.GenerateResource.Cache
+D:\wp\kyrsa\obj\x86\Debug\DESCBCProj.exe
+D:\wp\kyrsa\obj\x86\Debug\DESCBCProj.pdb

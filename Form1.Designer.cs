@@ -42,7 +42,6 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button8 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -69,17 +68,17 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(192, 22);
+            this.richTextBox1.Location = new System.Drawing.Point(186, 22);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(291, 169);
+            this.richTextBox1.Size = new System.Drawing.Size(297, 169);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(353, 197);
+            this.button1.Location = new System.Drawing.Point(368, 197);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 34);
+            this.button1.Size = new System.Drawing.Size(115, 34);
             this.button1.TabIndex = 2;
             this.button1.Text = "Зашифровать >>";
             this.button1.UseVisualStyleBackColor = true;
@@ -94,9 +93,9 @@
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(202, 20);
+            this.richTextBox2.Location = new System.Drawing.Point(186, 22);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(281, 171);
+            this.richTextBox2.Size = new System.Drawing.Size(297, 169);
             this.richTextBox2.TabIndex = 4;
             this.richTextBox2.Text = "";
             // 
@@ -111,7 +110,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(9, 33);
+            this.textBox2.Location = new System.Drawing.Point(9, 35);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(171, 20);
             this.textBox2.TabIndex = 6;
@@ -119,7 +118,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 4);
+            this.label3.Location = new System.Drawing.Point(6, 6);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(171, 26);
             this.label3.TabIndex = 7;
@@ -127,9 +126,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(349, 200);
+            this.button2.Location = new System.Drawing.Point(368, 197);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(134, 34);
+            this.button2.Size = new System.Drawing.Size(115, 34);
             this.button2.TabIndex = 8;
             this.button2.Text = "<< Расшифровать";
             this.button2.UseVisualStyleBackColor = true;
@@ -138,7 +137,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(243, 4);
+            this.label4.Location = new System.Drawing.Point(239, 6);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(197, 13);
             this.label4.TabIndex = 9;
@@ -158,7 +157,6 @@
             // 
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.textBox3);
-            this.tabPage1.Controls.Add(this.button8);
             this.tabPage1.Controls.Add(this.button6);
             this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.button4);
@@ -192,21 +190,11 @@
             this.textBox3.Size = new System.Drawing.Size(171, 20);
             this.textBox3.TabIndex = 21;
             // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(256, 349);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(226, 23);
-            this.button8.TabIndex = 20;
-            this.button8.Text = "Сохранить в файл зашифрованный текст";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(192, 197);
+            this.button6.Location = new System.Drawing.Point(186, 197);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(130, 34);
+            this.button6.Size = new System.Drawing.Size(115, 34);
             this.button6.TabIndex = 19;
             this.button6.Text = "Загрузить текст";
             this.button6.UseVisualStyleBackColor = true;
@@ -214,9 +202,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(29, 197);
+            this.button5.Location = new System.Drawing.Point(9, 100);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(127, 34);
+            this.button5.Size = new System.Drawing.Size(171, 34);
             this.button5.TabIndex = 18;
             this.button5.Text = "Сгенерировать ключ";
             this.button5.UseVisualStyleBackColor = true;
@@ -224,9 +212,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(6, 349);
+            this.button4.Location = new System.Drawing.Point(9, 140);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(226, 23);
+            this.button4.Size = new System.Drawing.Size(171, 34);
             this.button4.TabIndex = 17;
             this.button4.Text = "Сохранить в файл ключ";
             this.button4.UseVisualStyleBackColor = true;
@@ -234,9 +222,9 @@
             // 
             // richTextBox3
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(6, 251);
+            this.richTextBox3.Location = new System.Drawing.Point(9, 237);
             this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(476, 92);
+            this.richTextBox3.Size = new System.Drawing.Size(473, 134);
             this.richTextBox3.TabIndex = 16;
             this.richTextBox3.Text = "";
             // 
@@ -263,7 +251,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 56);
+            this.label6.Location = new System.Drawing.Point(6, 58);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(124, 13);
             this.label6.TabIndex = 24;
@@ -271,24 +259,24 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(9, 72);
+            this.textBox4.Location = new System.Drawing.Point(9, 74);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(171, 20);
             this.textBox4.TabIndex = 23;
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(202, 200);
+            this.button7.Location = new System.Drawing.Point(186, 197);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(115, 34);
             this.button7.TabIndex = 20;
-            this.button7.Text = "Загрузить текст";
+            this.button7.Text = "Загрузить шифр";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(9, 200);
+            this.button3.Location = new System.Drawing.Point(9, 100);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(171, 34);
             this.button3.TabIndex = 19;
@@ -298,9 +286,9 @@
             // 
             // richTextBox4
             // 
-            this.richTextBox4.Location = new System.Drawing.Point(9, 256);
+            this.richTextBox4.Location = new System.Drawing.Point(9, 237);
             this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(475, 115);
+            this.richTextBox4.Size = new System.Drawing.Size(475, 134);
             this.richTextBox4.TabIndex = 18;
             this.richTextBox4.Text = "";
             // 
@@ -344,7 +332,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label6;

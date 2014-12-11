@@ -11,8 +11,7 @@ namespace CBCDES
 {
     public partial class Form1 : Form
     {
-        List<string> eCode = new List<string>();
-        List<string> dCode = new List<string>();
+        private string source;
 
         public Form1()
         {
@@ -329,7 +328,7 @@ namespace CBCDES
         
         private string getByteString(string textBlock)
         {
-            byte[] byteArray = Encoding.GetEncoding(1251).GetBytes(textBlock);
+            byte[] byteArray = Encoding.GetEncoding(1252).GetBytes(textBlock);
             string procString, result = "";
             for(int i = 0; i < byteArray.Length; i++)
             {
@@ -351,7 +350,7 @@ namespace CBCDES
                 MessageBox.Show("Ключ для DES должен быть 8 бит");
                 return null;
             }
-            //byte[] byteKey = Encoding.GetEncoding(1251).GetBytes(key);
+            //byte[] byteKey = Encoding.GetEncoding(1252).GetBytes(key);
 
             return getByteString(key);
         }
@@ -381,7 +380,7 @@ namespace CBCDES
                 return stringToCharArray(key, 64);
             }
 
-            byte[] byteKey = Encoding.GetEncoding(1251).GetBytes(sequence);            
+            byte[] byteKey = Encoding.GetEncoding(1252).GetBytes(sequence);            
             string stringByteSequence = getByteString(sequence);
 
             return stringToCharArray(stringByteSequence, 64);
@@ -595,10 +594,12 @@ namespace CBCDES
             ///////////Считывание исходного текста/////////////////////////////////////
             string[] messageTextBlocks = getMessageText(richTextBox1.Text);
             if (messageTextBlocks.Count() == 0) return;
+            string key = getKeyByteString(textBox1.Text);
+            if (key == null) return;
             ///////////Шифрование блоков текста по 64 бит///////////////////
             char[] cypher = new char[64], xoredTextBlock = new char[64];
-            char[] initialSequence = getInitialSequence(textBox3.Text, getKeyByteString(textBox1.Text));
-            richTextBox3.Text = "";
+            char[] initialSequence = getInitialSequence(textBox3.Text, key);
+            string result = "";
             foreach(string textBlock in messageTextBlocks)
             {
                 if(textBlock == null)
@@ -611,7 +612,6 @@ namespace CBCDES
                 cypher = encodeBlock(charToString(xoredTextBlock));
                 if(cypher == null) return;
 
-                eCode.Add(charToString(cypher));
                 for (int i = 0; i < 64; i++)
                     initialSequence[i] = cypher[i];
 
@@ -631,8 +631,14 @@ namespace CBCDES
                 {
                     cypherByteCode[i] = Convert.ToByte(Convert.ToInt32(sypherByteBlocks[i], 2));
                 }
-                richTextBox3.Text += Encoding.GetEncoding(1251).GetString(cypherByteCode);
+
+                result += Encoding.GetEncoding(1252).GetString(cypherByteCode);
             }
+
+            richTextBox3.Text = result;
+            string filePathKeys = System.Windows.Forms.Application.StartupPath;
+            filePathKeys = filePathKeys + "\\result.txt";
+            System.IO.File.WriteAllText(filePathKeys, result, Encoding.GetEncoding(1252));
         }
 
         /// <summary>
@@ -643,14 +649,16 @@ namespace CBCDES
         private void button2_Click(object sender, EventArgs e)
         {
             ///////////////////////Считывание исходного текста/////////////////////////////////////
-            
-            string[] messageTextBlocks = getMessageText(richTextBox2.Text);
-            if (messageTextBlocks.Count() == null) return;
+            if (source == null) return;
 
+            string[] messageTextBlocks = getMessageText(source);
+            if (messageTextBlocks.Count() == null) return;
+            string key = getKeyByteString(textBox2.Text);
+            if (key == null) return;
+            source = "";
             ///////////Разбиение всего текста на участки по 64 бита///////////////////
             char[] byteMessageBlock = new char[64], tempByteCode = new char[64];
-            char[] initialSequence = getInitialSequence(textBox4.Text, getKeyByteString(textBox2.Text));
-            richTextBox4.Text = "";
+            char[] initialSequence = getInitialSequence(textBox4.Text, key);
             foreach(string textBlock in messageTextBlocks)
             {
                 if (textBlock == null)
@@ -661,7 +669,7 @@ namespace CBCDES
                 for (int i = 0; i < 64; i++)
                     byteMessageBlock[i] = (Convert.ToBoolean(byteMessageBlock[i] ^ initialSequence[i])) ? '1' : '0';
                 
-                initialSequence = stringToCharArray(getByteString(textBlock), 64);dCode.Add(charToString(initialSequence));
+                initialSequence = stringToCharArray(getByteString(textBlock), 64);
                 ////////////////Конвертация из байт в символы//////////////////////////
                 byte[] messageByteCode = new byte[8];
                 string[] messageByteBlocks = new string[8];
@@ -679,8 +687,15 @@ namespace CBCDES
                     messageByteCode[i] = Convert.ToByte(Convert.ToInt32(messageByteBlocks[i], 2));
                 }
 
-                string partOfMessage = Encoding.GetEncoding(1251).GetString(messageByteCode);
-                richTextBox4.Text += partOfMessage;
+                source += Encoding.GetEncoding(1252).GetString(messageByteCode);               
+            }
+            richTextBox4.Text = source;
+            if (MessageBox.Show("Сохранить результат?", "", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            {
+                SaveFileDialog saveDlg = new SaveFileDialog();
+                saveDlg.InitialDirectory = System.Windows.Forms.Application.StartupPath;
+                if (saveDlg.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                    System.IO.File.WriteAllText(saveDlg.FileName, source);
             }
         }
 
@@ -738,11 +753,6 @@ namespace CBCDES
             string key1;
             int i, flag=0;
 
-            /*filePathText = System.Windows.Forms.Application.StartupPath;
-            filePathText = filePathText + "\\encodingText.txt";
-            readFile = System.IO.File.ReadAllText(filePathText, System.Text.Encoding.GetEncoding(1251));
-            richTextBox2.Text = readFile;*/
-
             filePathKeys = System.Windows.Forms.Application.StartupPath;
             filePathKeys = filePathKeys + "\\keys.txt";
             readKeys = System.IO.File.ReadAllText(filePathKeys, Encoding.GetEncoding(1252));
@@ -754,12 +764,6 @@ namespace CBCDES
 
                 if (flag == 0)
                     textBox2.Text += readKeys[i];
-
-                //if (flag == 1)
-                    //textBox5.Text += readKeys[i];
-
-                //if (flag == 2)
-                    //textBox6.Text += readKeys[i];
             }
         }
         
@@ -788,7 +792,7 @@ namespace CBCDES
             for (i = 0; i < 8; i++)
                 bytes2[i] = Convert.ToByte(cc[i]);
 
-            key += Encoding.GetEncoding(1251).GetString(bytes2);
+            key += Encoding.GetEncoding(1252).GetString(bytes2);
             textBox1.Text = key;
 
             key = "";
@@ -803,7 +807,7 @@ namespace CBCDES
             for (i = 0; i < 8; i++)
                 bytes2[i] = Convert.ToByte(cc[i]);
 
-            key += Encoding.GetEncoding(1251).GetString(bytes2);
+            key += Encoding.GetEncoding(1252).GetString(bytes2);
             //textBox4.Text = key;
 
             key = "";
@@ -818,33 +822,16 @@ namespace CBCDES
             for (i = 0; i < 8; i++)
                 bytes2[i] = Convert.ToByte(cc[i]);
 
-            key += Encoding.GetEncoding(1251).GetString(bytes2);
+            key += Encoding.GetEncoding(1252).GetString(bytes2);
             //textBox3.Text = key;
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            string readFile, filePathText, filePathKeys;
-            string readKeys = "";
-            string key1;
-            int i, flag = 0;
-
-            filePathText = System.Windows.Forms.Application.StartupPath;
-            filePathText = filePathText + "\\encodingText.txt";
-            readFile = System.IO.File.ReadAllText(filePathText, Encoding.GetEncoding(1252));
-            richTextBox2.Text = readFile;
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            string writeFile, filePathText;
-            writeFile = richTextBox3.Text;
-
-            filePathText = System.Windows.Forms.Application.StartupPath;
-            filePathText = filePathText + "\\encodingText.txt";
-            System.IO.File.WriteAllText(filePathText, writeFile, Encoding.GetEncoding(1252));
-
-            MessageBox.Show("Зaкодированный текст записан в файл");
+            string filePathText = System.Windows.Forms.Application.StartupPath;
+            filePathText = filePathText + "\\result.txt";
+            source = System.IO.File.ReadAllText(filePathText, Encoding.GetEncoding(1252));
+            richTextBox2.Text = source;
         }
     }
 }
