@@ -1,0 +1,53 @@
+c:\users\dima\documents\visual studio 2010\Projects\kyrsach_zi\kyrsach_zi\bin\Debug\kyrsach_zi.exe
+c:\users\dima\documents\visual studio 2010\Projects\kyrsach_zi\kyrsach_zi\bin\Debug\kyrsach_zi.pdb
+c:\users\dima\documents\visual studio 2010\Projects\kyrsach_zi\kyrsach_zi\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\dima\documents\visual studio 2010\Projects\kyrsach_zi\kyrsach_zi\obj\x86\Debug\kyrsach_zi.Form1.resources
+c:\users\dima\documents\visual studio 2010\Projects\kyrsach_zi\kyrsach_zi\obj\x86\Debug\kyrsach_zi.Properties.Resources.resources
+c:\users\dima\documents\visual studio 2010\Projects\kyrsach_zi\kyrsach_zi\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\dima\documents\visual studio 2010\Projects\kyrsach_zi\kyrsach_zi\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\dima\documents\visual studio 2010\Projects\kyrsach_zi\kyrsach_zi\obj\x86\Debug\kyrsach_zi.exe
+c:\users\dima\documents\visual studio 2010\Projects\kyrsach_zi\kyrsach_zi\obj\x86\Debug\kyrsach_zi.pdb
+C:\Users\Дима\Desktop\kyrsach_zi\kyrsach_zi\obj\x86\Debug\kyrsach_zi.exe
+C:\Users\Дима\Desktop\kyrsach_zi\kyrsach_zi\obj\x86\Debug\kyrsach_zi.pdb
+C:\Users\Дима\Desktop\kyrsach_zi\kyrsach_zi\bin\Debug\kyrsach_zi.exe
+C:\Users\Дима\Desktop\kyrsach_zi\kyrsach_zi\bin\Debug\kyrsach_zi.pdb
+C:\Users\Дима\Desktop\kyrsach_zi\kyrsach_zi\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Дима\Desktop\kyrsach_zi\kyrsach_zi\obj\x86\Debug\kyrsach_zi.Form1.resources
+C:\Users\Дима\Desktop\kyrsach_zi\kyrsach_zi\obj\x86\Debug\kyrsach_zi.Properties.Resources.resources
+C:\Users\Дима\Desktop\kyrsach_zi\kyrsach_zi\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Дима\Desktop\kyrsach_zi\kyrsach_zi\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Dell\Desktop\kyrsach_zi\kyrsach_zi\obj\x86\Debug\kyrsach_zi.exe
+C:\Users\Dell\Desktop\kyrsach_zi\kyrsach_zi\obj\x86\Debug\kyrsach_zi.pdb
+D:\Study\Защита информации\my\kurs\kyrsach_zi\kyrsach_zi\obj\x86\Debug\kyrsach_zi.exe
+D:\Study\Защита информации\my\kurs\kyrsach_zi\kyrsach_zi\obj\x86\Debug\kyrsach_zi.pdb
+D:\Study\Защита информации\my\kurs\kyrsach_zi\kyrsach_zi\bin\Debug\kyrsach_zi.exe
+D:\Study\Защита информации\my\kurs\kyrsach_zi\kyrsach_zi\bin\Debug\kyrsach_zi.pdb
+D:\Study\Защита информации\my\kurs\kyrsach_zi\kyrsach_zi\obj\x86\Debug\kyrsach_zi.Form1.resources
+D:\Study\Защита информации\my\kurs\kyrsach_zi\kyrsach_zi\obj\x86\Debug\kyrsach_zi.Properties.Resources.resources
+D:\Study\Защита информации\my\kurs\kyrsach_zi\kyrsach_zi\obj\x86\Debug\kyrsach_zi.csproj.GenerateResource.Cache
+D:\БИТМ\Учеба\Защита информации\my\kurs\kyrsach_zi\kyrsach_zi\obj\x86\Debug\kyrsach_zi.exe
+D:\БИТМ\Учеба\Защита информации\my\kurs\kyrsach_zi\kyrsach_zi\obj\x86\Debug\kyrsach_zi.pdb
+D:\БИТМ\Учеба\Защита информации\my\kurs\kyrsach_zi\kyrsach_zi\bin\Debug\kyrsach_zi.exe
+D:\БИТМ\Учеба\Защита информации\my\kurs\kyrsach_zi\kyrsach_zi\bin\Debug\kyrsach_zi.pdb
+D:\БИТМ\Учеба\Защита информации\my\kurs\kyrsach_zi\kyrsach_zi\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\БИТМ\Учеба\Защита информации\my\kurs\kyrsach_zi\kyrsach_zi\obj\x86\Debug\kyrsach_zi.Form1.resources
+D:\БИТМ\Учеба\Защита информации\my\kurs\kyrsach_zi\kyrsach_zi\obj\x86\Debug\kyrsach_zi.Properties.Resources.resources
+D:\БИТМ\Учеба\Защита информации\my\kurs\kyrsach_zi\kyrsach_zi\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\БИТМ\Учеба\Защита информации\my\kurs\kyrsach_zi\kyrsach_zi\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\БИТМ\Учеба\Защита информации\my\kurs\kyrsach_zi - копия\kyrsach_zi\obj\x86\Debug\kyrsach_zi.exe
+D:\БИТМ\Учеба\Защита информации\my\kurs\kyrsach_zi - копия\kyrsach_zi\obj\x86\Debug\kyrsach_zi.pdb
+D:\БИТМ\Учеба\Защита информации\my\kurs\kyrsach_zi - копия\kyrsach_zi\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\БИТМ\Учеба\Защита информации\my\kurs\kyrsach_zi - копия\kyrsach_zi\obj\x86\Debug\kyrsach_zi.Form1.resources
+D:\БИТМ\Учеба\Защита информации\my\kurs\kyrsach_zi - копия\kyrsach_zi\obj\x86\Debug\kyrsach_zi.Properties.Resources.resources
+D:\БИТМ\Учеба\Защита информации\my\kurs\kyrsach_zi - копия\kyrsach_zi\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\БИТМ\Учеба\Защита информации\my\kurs\kyrsach_zi - копия\kyrsach_zi\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\БИТМ\Учеба\Защита информации\my\kurs\kyrsach_zi - копия\kyrsach_zi\bin\Debug\kyrsach_zi.exe
+D:\БИТМ\Учеба\Защита информации\my\kurs\kyrsach_zi - копия\kyrsach_zi\bin\Debug\kyrsach_zi.pdb
+D:\wp\kyrsa\kyrsach_zi\obj\x86\Debug\kyrsach_zi.exe
+D:\wp\kyrsa\kyrsach_zi\obj\x86\Debug\kyrsach_zi.pdb
+D:\wp\kyrsa\kyrsach_zi\bin\Debug\kyrsach_zi.exe
+D:\wp\kyrsa\kyrsach_zi\bin\Debug\kyrsach_zi.pdb
+D:\wp\kyrsa\kyrsach_zi\obj\x86\Debug\kyrsach_zi.csprojResolveAssemblyReference.cache
+D:\wp\kyrsa\kyrsach_zi\obj\x86\Debug\kyrsach_zi.csproj.GenerateResource.Cache
+D:\wp\kyrsa\kyrsach_zi\obj\x86\Debug\CBCDES.Form1.resources
+D:\wp\kyrsa\kyrsach_zi\obj\x86\Debug\CBCDES.Properties.Resources.resources
